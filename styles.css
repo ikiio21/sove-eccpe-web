@@ -1447,3 +1447,60 @@ body {
     font-size: 1.1rem;
     padding: 14px 28px;
 }
+
+
+/* Ajustes responsivos para la sección de video y texto */
+@media (max-width: 768px) {
+    .video-modern {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .video-modern .video-box iframe {
+        height: 220px;
+    }
+
+    .video-modern .content-box {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+
+    .video-modern .content-box h2 {
+        font-size: 1.6rem;
+    }
+
+    .video-modern .content-box p,
+    .video-modern .content-box li {
+        font-size: 1rem;
+    }
+
+    .video-modern .icon-list {
+        padding-left: 0;
+    }
+}
+
+
+/* Mejoras al estilo del video en móviles */
+@media (max-width: 768px) {
+    .video-modern .video-box {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-modern .video-box iframe {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 9 / 16;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .video-modern .video-box,
+    .video-modern .video-card {
+        box-shadow: none;
+        padding: 0;
+        background: none;
+    }
+}
