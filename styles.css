@@ -1,0 +1,1449 @@
+/* ===== RESET GENERAL ===== */
+body {
+    padding-top: 95px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVBAR PRINCIPAL ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    background-color: #1c1c1c;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* ===== CONTENEDOR DE NAVEGACIÓN ===== */
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* ===== ENLACES DE NAVEGACIÓN ===== */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links.right {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.nav-links li a.verde {
+    color: green;
+}
+
+/* ===== MENÚ DESPLEGABLE ===== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    right: 0;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1001;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 10px;
+    font-weight: normal;
+}
+
+
+
+/* ===== ESTILO GENERAL DE SECCIONES ===== */
+.seccion {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ===== SECCIONES CON COLUMNAS ===== */
+.columnas-tres > div,
+.video-texto > div,
+.circular .card {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* ===== CARRUSEL DE IMÁGENES ===== */
+.carrusel .carousel {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carrusel .carousel-item {
+    min-width: 300px;
+    height: 200px;
+    background: #eee;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== SECCIÓN TIPO CELULAR ===== */
+.tipo-celular {
+    background: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+/* ===== SECCIÓN DE VIDEO Y TEXTO ===== */
+.video-texto {
+    display: flex;
+}
+
+.video {
+    flex: 1;
+    background: #ddd;
+    height: 200px;
+}
+
+.texto {
+    flex: 1;
+}
+
+/* ===== SECCIÓN CON IMÁGENES CIRCULARES ===== */
+.circular .imagen-circular {
+    width: 100px;
+    height: 100px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* ===== SECCIÓN DE IMÁGENES ===== */
+.tres-imagenes img,
+.cuatro-pequenas img {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+}
+
+/* ===== SECCIÓN 1: CABECERA VERDE ===== */
+.cabecera-verde {
+    background-color: #0a962f;
+    color: white;
+    justify-content: space-between;
+    padding: 4px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 0.85em;
+}
+
+.cabecera-verde .col {
+    flex: 1;
+}
+
+.titulo-centro {
+    text-align: center;
+}
+
+.titulo-centro h2 {
+    font-size: 1.20em;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.titulo-centro p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* ===== ICONOS GENERALES ===== */
+.icono {
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
+/* ===== NAVBAR TRANSPARENTE SCROLL ===== */
+.navbar.transparente {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* ===== SECCIÓN 8: PIE DE PÁGINA ===== */
+.seccion-final {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 20px;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.seccion-final .col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.logo-footer {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.seccion-final h3 {
+    border-bottom: 2px solid green;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.seccion-final ul {
+    list-style: none;
+    padding: 0;
+}
+
+.seccion-final ul li {
+    margin-bottom: 10px;
+}
+
+/* ===== ESTILO TELÉFONO PIE DE PÁGINA ===== */
+.telefono {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #76ff76;
+}
+
+.telefono strong {
+    transition: color 0.3s ease;
+}
+
+.telefono strong:hover {
+    color: #00ff00;
+}
+
+/* ===== LINKS DE SERVICIOS ===== */
+.seccion-final .servicios ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.seccion-final .servicios ul li a:hover {
+    color: #00ff00;
+}
+
+/* ===== BLOQUE DE TELÉFONO CON HOVER ===== */
+.telefono-hover {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.telefono-hover strong {
+    font-size: 1.4em;
+    display: block;
+    color: #76ff76;
+}
+
+.telefono-hover i,
+.telefono-hover {
+    font-size: 0.9em;
+    color: white;
+}
+
+/* ===== TEXTO ETIQUETA Y NÚMERO ===== */
+.contacto-label {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.telefono-numero {
+    display: block;
+    font-size: 1.5em;
+    color: #76ff76;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.telefono-numero:hover {
+    color: #00ff00;
+}
+
+/* ===== ICONO DE UBICACIÓN ===== */
+.ubicacion-icono {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* ===== ICONOS REDONDOS DE REDES SOCIALES ===== */
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6de08e;
+    color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+.icon-circle:hover {
+    background-color: #51c475;
+}
+
+/* ===== ESTILO CORREO BLANCO ===== */
+.icono-correo {
+    margin-right: 6px;
+}
+
+.correo-blanco {
+    color: white;
+    text-decoration: none;
+}
+
+.correo-blanco:hover {
+    text-decoration: underline;
+}
+
+/* ===== LOGO EN NAVBAR ===== */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img.logo-navbar {
+    height: 60px;
+    margin-right: 20px;
+}
+
+/* ===== AJUSTES BÁSICOS NAVBAR ===== */
+.nav-links li a {
+    font-size: 0.78em;
+    font-weight: 500;
+}
+
+.nav-logo img.logo-navbar {
+    height: 85px;
+}
+
+/* ===== NAVBAR TEXTO BLANCO Y HOVER VERDE ===== */
+.nav-links li a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links li:hover > a {
+    color: #0a962f;
+}
+
+/* ===== MENÚ DESPLEGABLE ESTILO PROFESIONAL ===== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px); /* justo debajo de la franja negra */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    min-width: 220px;
+    z-index: 999;
+}
+
+
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #0a962f;
+    color: white;
+}
+
+/* Logo más grande en sección 8 */
+.logo-footer.grande {
+    width: 230px;
+}
+
+
+/* ===== TELEFONO WHATSAPP CLICABLE EN SECCIÓN TIPO CELULAR ===== */
+.telefono-whatsapp {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.telefono-whatsapp:hover {
+    color: #0a962f;
+}
+
+/* Imagen de portada en la sección de carrusel */
+.carrusel.imagen-portada {
+    padding: 0;
+}
+
+.img-portada {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Carrusel fullscreen con overlay tenue */
+.carrusel-fullscreen {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrusel-fullscreen .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.contenido-carrusel {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.contenido-carrusel h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenido-carrusel p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.boton-carrusel {
+    background-color: #0a962f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-carrusel:hover {
+    background-color: #076d22;
+}
+
+
+/* === MENÚ RESPONSIVO === */
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 240px;
+        background-color: #1c1c1c;
+        display: none;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid #333;
+    }
+
+    .nav-links li a {
+        padding: 14px 20px;
+        font-size: 1em;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: #2a2a2a;
+        box-shadow: none;
+        border-radius: 0;
+        min-width: auto;
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        color: white;
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: #0a962f;
+    }
+}
+
+
+/* ==== FOOTER RESPONSIVO ==== */
+@media (max-width: 768px) {
+    .seccion-final {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .seccion-final .col {
+        min-width: 100%;
+    }
+
+    .seccion-final .col.info,
+    .seccion-final .col.servicios,
+    .seccion-final .col.mapa {
+        padding: 0 10px;
+    }
+
+    .logo-footer.grande {
+        width: 180px;
+        margin: 0 auto 15px;
+    }
+
+    .telefono-hover {
+        text-align: center;
+    }
+
+    .seccion-final h3 {
+        border: none;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .seccion-final ul li {
+        margin-bottom: 8px;
+    }
+
+    .seccion-final iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+}
+
+
+/* ==== CABECERA VERDE RESPONSIVA ==== */
+@media (max-width: 768px) {
+    .cabecera-verde {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .cabecera-verde .col {
+        width: 100%;
+    }
+
+    .titulo-centro h2 {
+        font-size: 1em;
+        white-space: normal;
+    }
+
+    .titulo-centro p {
+        font-size: 0.85em;
+    }
+
+    .correo {
+        text-align: center !important;
+    }
+}
+
+/* Estilos Hidden-Bar solicitados */
+.hidden-bar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    color: white;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.hidden-bar.active {
+    left: 0;
+}
+
+.hidden-bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.hidden-bar-header a {
+    color: green;
+    font-size: 1.2em;
+    margin-left: 8px;
+}
+
+.hidden-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-nav ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.hidden-nav ul li a, .menu-item {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.hidden-nav ul li .submenu {
+    display: none;
+    padding-left: 10px;
+}
+
+.hidden-nav ul li .submenu.active {
+    display: block;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.login-btn {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background-color: #00a000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1500;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.open-hidden-bar {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    z-index: 2100;
+}
+
+#close-hidden-bar {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* Visibilidad responsive */
+@media(min-width: 769px){
+    .open-hidden-bar, #hidden-bar, #overlay {
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .navbar {
+        display: none;
+    }
+}
+
+
+/* === Hidden-bar profesional actualizado === */
+@media(max-width: 768px){
+    #hidden-bar {
+        background-color: #1c1c1c;
+    }
+
+    .hidden-bar-header {
+        background-color: #1c1c1c;
+        padding: 12px 15px;
+        border: none;
+        color: white;
+    }
+
+    .open-hidden-bar {
+        top: 10px;
+        right: 10px;
+        left: auto;
+        color: white;
+    }
+
+    .hidden-nav a,
+    .menu-item {
+        color: white;
+    }
+
+    .hidden-nav ul li a:hover {
+        background-color: #0a962f;
+        color: white;
+    }
+
+    .toggle-btn {
+        color: white;
+    }
+}
+
+
+/* === Ajuste final: textos del menú lateral en blanco === */
+@media(max-width: 768px){
+    .hidden-nav ul li a,
+    .hidden-nav .menu-item,
+    .submenu li a {
+        color: white !important;
+    }
+}
+
+
+/* === Diseño Profesional del Menú Hidden-Bar === */
+@media(max-width: 768px){
+    .hidden-bar {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hidden-bar-header {
+        padding: 20px 15px;
+        border-bottom: 1px solid #333;
+        font-size: 0.95em;
+    }
+
+    .hidden-nav ul li {
+        border-bottom: 1px solid #333;
+    }
+
+    .hidden-nav ul li a, .menu-item {
+        font-size: 1em;
+        padding: 16px 20px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    .hidden-nav ul li a:hover {
+        background-color: #0a962f;
+        color: white;
+        border-left: 4px solid #0a962f;
+    }
+
+    .toggle-btn i {
+        font-size: 0.9em;
+        margin-left: 5px;
+    }
+
+    .submenu li a {
+        padding-left: 30px;
+        font-size: 0.95em;
+        background-color: #252525;
+    }
+
+    .submenu li a:hover {
+        background-color: #0a962f;
+    }
+}
+
+/* ==== NUEVO DISEÑO PARA SECCIÓN DE SERVICIOS ==== */
+.titulo-servicios {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #0a962f;
+    font-weight: bold;
+}
+
+.titulo-servicios span {
+    color: white;
+}
+
+.servicios-rediseñados {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f7f7f7;
+    align-items: stretch;
+}
+
+.servicio-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.servicio-box:hover {
+    transform: translateY(-8px);
+}
+
+.icono-servicio {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.servicio-box h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.servicio-box p {
+    flex-grow: 1;
+}
+/* Estilo profesional para imágenes redondas en Sección 5 */
+.servicios-rediseñados {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+}
+
+.servicio-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    max-width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.servicio-box:hover {
+    transform: translateY(-8px);
+}
+
+.servicio-box img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0px solid #0a962f;
+    margin-bottom: 20px;
+}
+
+.servicio-box h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #0a962f;
+}
+
+.servicio-box p {
+    font-size: 0.95em;
+    color: #444;
+}
+
+/* Números decorativos */
+.servicio-numero {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #0a962f;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.solo-imagen-redonda {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+/* === Estilo profesional para sección de autoridades === */
+.titulo-autoridades {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.titulo-autoridades::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0a962f;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.autoridades-pro {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+
+.autoridad-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 280px;
+}
+
+.autoridad-card:hover {
+    transform: translateY(-10px);
+}
+
+.autoridad-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-hover {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px 10px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+}
+
+.autoridad-card:hover .info-hover {
+    bottom: 0;
+}
+
+.info-hover h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #0a962f;
+}
+
+.info-hover p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: 
+}
+
+
+.carousel-box {
+  padding: 40px 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  animation: scrollCarousel 20s linear infinite;
+}
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+.carousel-item img {
+  width: 99%;
+  height: 105%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 150, 47, 0.9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.carousel-item:hover .carousel-overlay {
+  opacity: 1;
+}
+.carousel-overlay h3 {
+  margin: 10px 0 0;
+  font-size: 1.1em;
+}
+.carousel-overlay small {
+  font-size: 0.85em;
+}
+.arrow {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: green;
+}
+@keyframes scrollCarousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/* Pausar animación al pasar el cursor */
+.carousel-box:hover .carousel-container {
+  animation-play-state: paused;
+}
+
+/* Responsive con scroll horizontal en móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    animation: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .carousel-item {
+    scroll-snap-align: center;
+  }
+}
+
+.carousel-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  flex: 0 0 300px;
+  margin-right: 20px;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+.carousel-nav.prev {
+  left: 10px;
+}
+.carousel-nav.next {
+  right: 10px;
+}
+
+
+.carousel-overlay h3,
+.carousel-overlay small {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Animación Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpAnim 1s ease-out forwards;
+}
+
+@keyframes fadeUpAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* === NUEVO AJUSTE FINAL NAVBAR DEBAJO DE CABECERA VERDE === */
+.cabecera-verde {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 47px; /* Altura estimada del encabezado verde */
+    width: 100%;
+    z-index: 999;
+    background-color: #1c1c1c;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.transparente {
+    background-color: transparent;
+}
+
+/* Animación para desplazamiento suave del navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+/* Mejor visibilidad solo para los enlaces principales de navegación */
+.nav-links > li > a {
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 0.82em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Sombra para botón de menú lateral en scroll */
+.open-hidden-bar.con-sombra {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #2c2c2c;
+    border-radius: 6px;
+}
+
+/* === SECCIÓN 4 MODERNA === */
+.video-modern {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.video-modern .video-box {
+    flex: 1 1 480px;
+    max-width: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.video-modern .video-box iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+.video-modern .content-box {
+    flex: 1 1 400px;
+    max-width: 550px;
+}
+.video-modern .content-box h2 {
+    color: #0a962f;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.video-modern .content-box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #444;
+}
+.video-modern .icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.video-modern .icon-list li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.video-modern .icon-list li i {
+    color: #0a962f;
+    margin-right: 10px;
+}
+.btn-verde {
+    background-color: #0a962f;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.btn-verde:hover {
+    background-color: #076d22;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-modern {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+    .video-modern .video-box iframe {
+        height: 200px;
+    }
+    .video-modern .content-box h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Indicadores para carrusel de portada */
+.carrusel-indicadores {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+}
+.carrusel-indicadores .indicador {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.carrusel-indicadores .indicador.activo {
+    background-color: #0a962f;
+    opacity: 1;
+}
+
+
+/* Flechas de navegación del carrusel */
+.carrusel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5em;
+    background: rgba(255, 255, 255, 0.6);
+    color: #0a962f;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    z-index: 6;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+.carrusel-nav:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+.carrusel-nav.prev {
+    left: 20px;
+}
+.carrusel-nav.next {
+    right: 20px;
+}
+
+
+/* Diseño mejorado para flechas del carrusel */
+.carrusel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(10, 150, 47, 0.9);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+.carrusel-nav:hover {
+    background: #0a962f;
+    /* sin escala en hover */
+}
+.carrusel-nav.prev {
+    left: 20px;
+}
+.carrusel-nav.next {
+    right: 20px;
+}
+
+.carrusel-nav:hover {
+    
+}
+
+.carrusel-nav:hover {
+    background: #0a962f;
+    transform: translateY(-50%);
+}
+
+
+.botonera {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn-verde {
+    background-color: #0a962f;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.btn-verde:hover {
+    background-color: #076d22;
+}
+.btn-transparente {
+    border: 2px solid #0a962f;
+    color: #0a962f;
+    background-color: transparent;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-transparente:hover {
+    background-color: #0a962f;
+    color: white;
+}
+
+
+/* Tamaño más grande para botones del carrusel */
+.btn-verde,
+.btn-transparente {
+    font-size: 1.1rem;
+    padding: 14px 28px;
+}
