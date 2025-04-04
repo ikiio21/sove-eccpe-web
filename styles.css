@@ -1687,3 +1687,123 @@ body {
     border-radius: 50%;
     font-weight: bold;
 }
+
+
+/* === AJUSTE FINAL CARRUSEL CENTRADO === */
+.ofertas-academicas {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.ofertas-carousel {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.ofertas-carousel .tarjeta-oferta {
+    margin: 0 5px;
+    max-width: 240px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.ofertas-carousel .tarjeta-oferta img {
+    border-radius: 10px;
+    padding: 1px;
+    width: 100%;
+    display: block;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    background-color: #ffffff !important;
+    color: #0a962f !important;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 1.5em !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -25px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -25px;
+}
+
+
+/* ==== OVERLAY VERDE SOLO SOBRE LA IMAGEN (NO TEXTO) ==== */
+.tarjeta-hover-info {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tarjeta-hover-info img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+.tarjeta-hover-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65%; /* Solo cubre parte superior donde está la imagen */
+    background-color: rgba(10, 150, 47, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.tarjeta-hover-info:hover::before {
+    background-color: rgba(10, 150, 47, 0.4);
+}
+
+.tarjeta-hover-info .hover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    z-index: 2;
+    color: #1d2443;
+    background-color: white;
+}
+
+.tarjeta-hover-info .hover-info small {
+    color: #777;
+}
+
+.tarjeta-hover-info .hover-info h3 {
+    color: #1d2443;
+}
+
+.flecha-hover {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #0a962f;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: inline-block;
+}
