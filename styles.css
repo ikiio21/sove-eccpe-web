@@ -1504,3 +1504,186 @@ body {
         background: none;
     }
 }
+
+/* Sección 7.1 estilo tarjeta con hover inferior */
+.ofertas-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.oferta-card {
+  position: relative;
+  width: 280px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.oferta-card:hover {
+  transform: translateY(-6px);
+}
+
+.imagen-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.4s ease;
+}
+
+.oferta-card:hover .imagen-bg {
+  filter: brightness(0.5);
+}
+
+.info-hover-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  color: #1d2443;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.oferta-card:hover .info-hover-card {
+  transform: translateY(0%);
+}
+
+.info-hover-card small {
+  color: #888;
+  font-size: 0.85em;
+}
+
+.info-hover-card h3 {
+  margin: 4px 0 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #1d2443;
+}
+
+.flecha span {
+  font-size: 1.8em;
+  color: white;
+  background-color: #0a962f;
+  border-radius: 50%;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+
+.carousel-horizontal {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: calc(300px * 4 + 80px); /* 4 tarjetas + espacio entre ellas */
+  margin: auto;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  padding: 10px;
+}
+
+.oferta-card {
+  width: 300px !important;
+}
+.tarjeta-oferta {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.tarjeta-oferta img {
+    width: 100%;
+    display: block;
+}
+.owl-nav .fa {
+    color: #333;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white !important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+.owl-nav .owl-prev {
+    left: -20px;
+}
+.owl-nav .owl-next {
+    right: -20px;
+}
+
+/* ==== HOVER INTEGRADO PARA SECCIÓN 7.1 ==== */
+.tarjeta-hover-info {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tarjeta-hover-info .hover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 12px 16px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: Arial, sans-serif;
+}
+
+.tarjeta-hover-info:hover .hover-info {
+    transform: translateY(0%);
+}
+
+.tarjeta-hover-info small {
+    color: #777;
+    font-size: 0.8em;
+}
+
+.tarjeta-hover-info h3 {
+    margin: 4px 0 0;
+    font-size: 1.1em;
+    color: #1d2443;
+    font-weight: bold;
+}
+
+.flecha-hover {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #0a962f;
+    padding: 6px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}

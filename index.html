@@ -8,6 +8,10 @@
     <link href="styles.css" rel="stylesheet"/>
     <link href="./IMG/icon-web.ico" rel="icon" type="image/x-icon"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
 </head>
 <body>
 <!-- Sección 1: Encabezado -->
@@ -169,82 +173,20 @@
 </section>
 <!-- Sección 7: Carrusel de Ofertas -->
 <h2 class="titulo-autoridades fade-up" style="color: #1d2443;">Ofertas Académicas</h2>
-<section class="carousel-box">
-    <button class="carousel-nav prev" id="prev-btn">❮</button>
-    <button class="carousel-nav next" id="next-btn">❯</button>
-    <div class="carousel-container">
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 1" src="img/carrusel1.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo C</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 2" src="img/carrusel2.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo D</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 3" src="img/carrusel3.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo E</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 4" src="img/carrusel4.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo G</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 5" src="img/carrusel5.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo E.1</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 6" src="img/carrusel6.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo D.1</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
-        <a class="carousel-item" href="Oferta.html">
-            <img alt="Oferta 7" src="img/carrusel7.png"/>
-            <div class="carousel-overlay">
-                <div>
-                    <small>Educación / Profesional</small>
-                    <h3>Licencia Tipo C.1</h3>
-                    <span class="arrow">→</span>
-                </div>
-            </div>
-        </a>
+
+<!-- Sección 7.1: Carrusel de Ofertas -->
+<section class="ofertas-academicas">
+    <div class="owl-carousel ofertas-carousel">
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA1.png" alt="Licencia Tipo C"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo C</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA2.png" alt="Licencia Tipo C1"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo C1</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA3.png" alt="Licencia Tipo D"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo D</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA4.png" alt="Licencia Tipo D1"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo D1</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA5.png" alt="Licencia Tipo E"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo E</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA6.png" alt="Licencia Tipo E1"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo E1</h3><span class="flecha-hover">→</span></div></div></a>
+        <a href="Oferta.html" style="text-decoration: none; color: inherit;"><div class="tarjeta-oferta tarjeta-hover-info"><img src="img/OFA7.png" alt="Licencia Tipo G"><div class="hover-info"><small>Educación / Profesional</small><h3>Licencia Tipo G</h3><span class="flecha-hover">→</span></div></div></a>
     </div>
 </section>
+
 <!-- Sección 8: Información + Servicios + Mapa -->
 <section class="seccion seccion-final">
     <div class="col info">
@@ -369,6 +311,90 @@
         }
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        function moveCarousel() {
+            currentIndex++;
+            if (currentIndex > totalCards - visibleCards) {
+                currentIndex = 0;
+            }
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+
+        setInterval(moveCarousel, 3000);
+    });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const track = document.querySelector(".carousel-track");
+    const cards = document.querySelectorAll(".carousel-track .oferta-card");
+    const nextBtn = document.createElement('button');
+    const prevBtn = document.createElement('button');
+
+    nextBtn.innerHTML = '&#10095;';
+    prevBtn.innerHTML = '&#10094;';
+
+    nextBtn.classList.add('carousel-nav', 'next');
+    prevBtn.classList.add('carousel-nav', 'prev');
+
+    document.querySelector('.carousel-horizontal').appendChild(nextBtn);
+    document.querySelector('.carousel-horizontal').appendChild(prevBtn);
+
+    let currentIndex = 0;
+    const visibleCards = 4;
+    const cardWidth = cards[0].offsetWidth + 20;
+
+    function updateCarousel() {
+        if (currentIndex < 0) currentIndex = cards.length - visibleCards;
+        if (currentIndex > cards.length - visibleCards) currentIndex = 0;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex++;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex--;
+        updateCarousel();
+    });
+
+    updateCarousel();
+});
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.ofertas-carousel').owlCarousel({
+        loop:true,
+        margin:20,
+        nav:true,
+        navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+        items:4,
+        slideBy:1,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{ items:1 },
+            600:{ items:2 },
+            1000:{ items:4 }
+        }
+    });
+});
+</script>
+
 </body>
 </html>
 <script>
