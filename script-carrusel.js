@@ -31,5 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btnNext.addEventListener("click", nextSlide);
     btnPrev.addEventListener("click", prevSlide);
 
+    indicators.forEach((dot, i) => {
+        dot.addEventListener("click", () => showSlide(i));
+    });
+
     interval = setInterval(nextSlide, 5000);
 });
