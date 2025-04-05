@@ -1807,3 +1807,249 @@ body {
     font-weight: bold;
     display: inline-block;
 }
+
+
+/* === FLIP CARD === */
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 300px;
+  perspective: 1000px;
+
+  margin: 15px;}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+
+  backdrop-filter: blur(8px);
+  background-color: rgba(10, 150, 47, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.flip-card-front {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+}
+.flip-card-front .info-hover-card {
+  background: white;
+  padding: 12px;
+  width: 100%;
+}
+.flip-card-back {
+  background-color: #0a962f;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+
+  backdrop-filter: blur(8px);
+  background-color: rgba(10, 150, 47, 0.85);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.flip-card-back .requisitos h4 {
+  margin-top: 0;
+}
+.flip-card-back .requisitos ul {
+  padding-left: 20px;
+}
+.flip-card-back .requisitos li {
+  margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .flip-card-inner {
+    height: auto;
+  }
+
+  .flip-card-front, .flip-card-back {
+    height: 300px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+}
+
+@media (max-width: 480px) {
+  .flip-card-back .requisitos h4 {
+    font-size: 1.1em;
+  }
+  .flip-card-back .requisitos li {
+    font-size: 0.95em;
+  }
+}
+
+
+/* Fondo personalizado para Sección 3 */
+.fondo-welcome {
+    background-image: url('img/welcome-2.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.fondo-welcome .texto, .fondo-welcome .video {
+    z-index: 2;
+    position: relative;
+}
+.fondo-welcome::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255,255,255,0.85);
+    z-index: 0;
+}
+
+
+/* Sección Welcome estilo imagen y texto profesional */
+.seccion-welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background-color: #fff;
+}
+
+.bienvenida-texto {
+    flex: 1 1 50%;
+    padding-right: 30px;
+}
+
+.bienvenida-texto h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #1d2443;
+    margin-bottom: 20px;
+}
+
+.bienvenida-texto p {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6em;
+}
+
+.bienvenida-imagen {
+    flex: 1 1 40%;
+    text-align: right;
+}
+
+.bienvenida-imagen img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+/* Responsive para welcome */
+@media (max-width: 768px) {
+    .seccion-welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bienvenida-texto {
+        padding: 0;
+    }
+    .bienvenida-imagen {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Sección Capacitación Adicional */
+.adicional {
+    background-color: #f8faff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.adicional-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.adicional-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adicional-card:hover {
+    transform: translateY(-8px);
+}
+
+.adicional-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adicional-card .contenido {
+    padding: 20px;
+}
+
+.adicional-card h3 {
+    font-size: 1.2em;
+    color: #1d2443;
+    margin-bottom: 12px;
+}
+
+.adicional-card p {
+    font-size: 0.95em;
+    color: #444;
+}
+
+
+.nav-links li a.activo,
+.hidden-nav a.activo {
+  color: #0a962f !important;
+  font-weight: bold;
+}
