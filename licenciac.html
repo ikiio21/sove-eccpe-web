@@ -8,10 +8,8 @@
     <link href="styles.css" rel="stylesheet"/>
     <link href="./IMG/icon-web.ico" rel="icon" type="image/x-icon"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet"/>
 </head>
 <body>
 <!-- Sección 1: Encabezado -->
@@ -87,45 +85,118 @@
 </div>
 <div id="overlay"></div>
 <button class="open-hidden-bar" id="open-hidden-bar"><i class="fas fa-bars"></i></button>
-<!-- Sección 2: Imagen de portada con carrusel automático -->
-<section class="carrusel-fullscreen" id="portada-carrusel"><button class="carrusel-nav prev" id="carrusel-prev">❮</button><button class="carrusel-nav next" id="carrusel-next">❯</button>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-1.jpg');">
-        <div class="overlay"></div>
-        <div class="contenido-carrusel">
-            <h1>Bienvenidos a S.O.V.E.</h1>
-            <p>Capacitación Profesional con Calidad</p>
-            <a class="btn-verde" href="nosotros.html">Conócenos</a>
-        </div>
-    </div>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-2.jpg'); display: none;">
-        <div class="overlay"></div>
-        <div class="contenido-carrusel">
-            <h1>Tu Futuro Sobre Ruedas</h1>
-            <p>Licencias Profesionales para un mejor mañana</p>
-            <a class="btn-verde" href="Oferta.html">Ver oferta</a>
-        </div>
-    </div>
-    <div class="carrusel-slide" style="background-image: url('img/carrusel-3.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Escuela de Capacitación para Conductores Profesionales de Esmeraldas.</h1><p>Formamos conductores profesionales con seguridad y excelencia.</p><div class="botonera"><a class="btn-verde" href="https://wa.me/593990230465" target="_blank">Únete</a><a class="btn-transparente" href="https://mail.sove.ec/moodle/login/index.php" target="_blank">Inicia Sesión</a></div></div></div><div class="carrusel-slide" style="background-image: url('img/carrusel-4.jpg'); display: none;"><div class="overlay"></div><div class="contenido-carrusel"><h1>Reglas claras, caminos seguros. ¡Conduce con nosotros!</h1></div></div><div class="carrusel-indicadores"><span class="indicador activo"></span><span class="indicador"></span><span class="indicador"></span><span class="indicador"></span></div></section>
 
-<!-- Sección 3: Información técnica y ubicación -->
-<section class="seccion contacto-info" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px 20px;">
-  <div class="col contacto-card">
-    <div class="icono-contacto"><i class="fas fa-tools"></i></div>
-    <h3>Soporte Técnico</h3>
-    <p><strong>Horario de atención:</strong><br>
-    Lunes a viernes: 08:00 - 17:00<br>
-    Sábado: 08:00 - 12:00</p>
-    <p><strong>Teléfonos:</strong><br>0990230465<br><strong>Correo:</strong><br>sove.eccpe@gmail.com</p>
+
+<!-- Sección 2:Banner con overlay -->
+<section class="banner-oferta sin-espacio">
+  <div class="banner-container">
+    <img src="img/banner-oferta.png" alt="Banner Oferta" class="banner-img">
+    <div class="banner-overlay"></div>
   </div>
-  <div class="col contacto-card">
-    <div class="icono-contacto"><i class="fas fa-map-marker-alt"></i></div>
-    <h3>Ubicación Oficinas</h3>
-    <p>Av. Olmedo y Roca Fuerte<br>Esmeraldas, Ecuador<br><strong>Horario de atención:</strong><br>Lunes a viernes: 08:00 - 17:00<br>Sábado: 08:00 - 12:00</p>
-    <p><strong>Teléfonos:</strong> (02) 2505840<br>0990230465<br><strong>Correo:</strong><br>sove.eccpe@gmail.com</p>
-  </div>
-  <div class="col contacto-card mapa">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.24891920117!2d-79.6540843!3d0.9680001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc01a38c8e4b%3A0xf6c68fe9cf29c463!2sSindivato%20De%20Choferes%20De%20Volqueta!5e0!3m2!1ses!2sec!4v1739137688206!5m2!1ses!2sec" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+</section>
+
+
+<!-- Sección 3:Obtén tu licencia profesional -->
+<section class="seccion" style="flex-direction: column;">
+    <div style="background-color: #0a962f; color: white; padding: 10px 30px; border-radius: 12px; text-align: center; font-size: 1.8em; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 20px;">
+        Obtén tu licencia profesional en 5 meses
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); max-width: 900px;">
+        <div style="flex: 1; min-width: 250px;">
+            <div style="background-color: #0a962f; color: white; padding: 12px 20px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center;">
+                Requisitos principales
+            </div>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em; color: #333;">
+                <li style="margin-bottom: 12px;"><i class="fas fa-id-card" style="margin-right: 10px;"></i> Ser mayor de edad</li>
+                <li><i class="fas fa-book" style="margin-right: 10px;"></i> Tener título de bachiller o aprobado el primero de bachillerato (4to Curso)</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <div style="background-color: #0a962f; color: white; padding: 12px 20px; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center;">
+                ¿Qué vehículos puedo conducir con esta categoría?
+            </div>
+            <ul style="list-style: none; padding: 0; font-size: 1.1em; color: #333;">
+                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #0a962f; margin-right: 10px;"></i> Taxis ejecutivos y convencionales.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #0a962f; margin-right: 10px;"></i> Camionetas de servicio público y comercial.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #0a962f; margin-right: 10px;"></i> Camiones de hasta 3.5 toneladas.</li>
+                <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #0a962f; margin-right: 10px;"></i> Furgonetas de hasta 26 pasajeros.</li>
+                <li><i class="fas fa-check-circle" style="color: #0a962f; margin-right: 10px;"></i> Vehículos comprendidos en el tipo B.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Sección 4: Inversión del curso -->
+<section class="seccion" style="flex-direction: column;">
+    <div style="background-color: #0a962f; color: white; padding: 10px 30px; border-radius: 12px; text-align: center; font-size: 1.8em; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 30px;">
+        Inversión del curso
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: center; max-width: 900px;">
+        <div style="text-align: center;">
+            <img alt="Valor del curso" src="img/dinero1.png" style="width: 200px; height: auto; margin-bottom: 20px;"/>
+            <div style="background-color: #0a962f; color: white; padding: 12px 20px; border-radius: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                VALOR DEL CURSO<br/><span style="display:block; margin-top: 8px; font-size: 1.3em;">$958.35</span>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <img alt="Cuota inicial" src="img/dinero2.png" style="width: 200px; height: auto; margin-bottom: 20px;"/>
+            <div style="background-color: #0a962f; color: white; padding: 12px 20px; border-radius: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                CUOTA INICIAL<br/><span style="display:block; margin-top: 8px; font-size: 1.3em;">$150.35</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 5: Formas de Pago -->
+<section class="seccion" style="flex-direction: column;">
+    <div style="background-color: #0a962f; color: white; padding: 10px 30px; border-radius: 12px; text-align: center; font-size: 1.8em; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 30px;">
+        Formas de Pago
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; background-color: white; padding: 30px 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 900px;">
+        <div style="min-width: 250px;">
+            <p style="font-size: 1.2em; margin-bottom: 20px;"><img alt="Crédito" src="img/pago1.png" style="width: 28px; vertical-align: middle; margin-right: 10px;"/> Crédito Directo con la escuela</p>
+            <p style="font-size: 1.2em;"><img alt="Transferencia" src="img/pago2.png" style="width: 28px; vertical-align: middle; margin-right: 10px;"/> Transferencias Banco Pichincha</p>
+        </div>
+        <div style="min-width: 250px;">
+            <p style="font-size: 1.2em; margin-bottom: 20px;"><img alt="Efectivo" src="img/pago3.png" style="width: 28px; vertical-align: middle; margin-right: 10px;"/> Efectivo o Depósito Bancario</p>
+            <p style="font-size: 1.2em;"><img alt="Tarjeta" src="img/pago4.png" style="width: 28px; vertical-align: middle; margin-right: 10px;"/> Tarjeta de Crédito o Débito</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 6: Clases -->
+<section class="seccion" style="flex-direction: column;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px;">
+        <div style="flex: 1; min-width: 300px;">
+            <div style="background-color: #0a962f; color: white; padding: 10px 30px; border-radius: 12px; text-align: center; font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">
+                Horarios de Clase
+            </div>
+            <div style="border: 1px solid #999; border-radius: 6px; padding: 25px; text-align: center;">
+                <p style="font-size: 1.2em;"><strong>(Jornada a seleccionar)</strong></p>
+                <p>Clases teóricas virtuales</p>
+                <p><strong>Lunes a viernes</strong></p>
+                <p>🌞 Matutino: 08h00 a 11h00</p>
+                <p>🌙 Nocturno: 18h30 a 21h30</p>
+                <p><strong>Fines de semana:</strong></p>
+                <p>🌅 Sábado y Domingo de 07h30 a 15h45</p>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <div style="background-color: #0a962f; color: white; padding: 10px 30px; border-radius: 12px; text-align: center; font-size: 1.5em; font-weight: bold; margin-bottom: 20px;">
+                Clases prácticas presenciales
+            </div>
+            <div style="text-align: center;">
+                <img alt="Clases prácticas" src="img/practicas.jpg" style="width: 100%; max-width: 300px; border-radius: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 15px;"/>
+                <p style="border: 1px solid black; display: inline-block; padding: 8px 14px; border-radius: 12px; font-size: 1em;">
+                    Se coordinan directamente con el Departamento de Conducción una vez matriculado
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="https://api.whatsapp.com/send/?phone=593990230465&amp;text&amp;type=phone_number&amp;app_absent=0" style="background-color: #0a962f; color: white; font-size: 1.2em; padding: 12px 25px; border-radius: 16px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" target="_blank">
+            Contactar con un asesor
+        </a>
+    </div>
 </section>
 
 <!-- Sección 8: Información + Servicios + Mapa -->
@@ -271,74 +342,67 @@
         setInterval(moveCarousel, 3000);
     });
 </script>
-
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const track = document.querySelector(".carousel-track");
-    const cards = document.querySelectorAll(".carousel-track .oferta-card");
-    const nextBtn = document.createElement('button');
-    const prevBtn = document.createElement('button');
+    document.addEventListener("DOMContentLoaded", function() {
+        const track = document.querySelector(".carousel-track");
+        const cards = document.querySelectorAll(".carousel-track .oferta-card");
+        const nextBtn = document.createElement('button');
+        const prevBtn = document.createElement('button');
 
-    nextBtn.innerHTML = '&#10095;';
-    prevBtn.innerHTML = '&#10094;';
+        nextBtn.innerHTML = '&#10095;';
+        prevBtn.innerHTML = '&#10094;';
 
-    nextBtn.classList.add('carousel-nav', 'next');
-    prevBtn.classList.add('carousel-nav', 'prev');
+        nextBtn.classList.add('carousel-nav', 'next');
+        prevBtn.classList.add('carousel-nav', 'prev');
 
-    document.querySelector('.carousel-horizontal').appendChild(nextBtn);
-    document.querySelector('.carousel-horizontal').appendChild(prevBtn);
+        document.querySelector('.carousel-horizontal').appendChild(nextBtn);
+        document.querySelector('.carousel-horizontal').appendChild(prevBtn);
 
-    let currentIndex = 0;
-    const visibleCards = 4;
-    const cardWidth = cards[0].offsetWidth + 20;
+        let currentIndex = 0;
+        const visibleCards = 4;
+        const cardWidth = cards[0].offsetWidth + 20;
 
-    function updateCarousel() {
-        if (currentIndex < 0) currentIndex = cards.length - visibleCards;
-        if (currentIndex > cards.length - visibleCards) currentIndex = 0;
-        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    }
+        function updateCarousel() {
+            if (currentIndex < 0) currentIndex = cards.length - visibleCards;
+            if (currentIndex > cards.length - visibleCards) currentIndex = 0;
+            track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
 
-    nextBtn.addEventListener('click', () => {
-        currentIndex++;
+        nextBtn.addEventListener('click', () => {
+            currentIndex++;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex--;
+            updateCarousel();
+        });
+
         updateCarousel();
     });
-
-    prevBtn.addEventListener('click', () => {
-        currentIndex--;
-        updateCarousel();
-    });
-
-    updateCarousel();
-});
 </script>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
-$(document).ready(function(){
-    $('.ofertas-carousel').owlCarousel({
-        loop:true,
-        margin:20,
-        nav:true,
-        navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
-        items:4,
-        slideBy:1,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        responsive:{
-            0:{ items:1 },
-            600:{ items:2 },
-            1000:{ items:4 }
-        }
+    $(document).ready(function(){
+        $('.ofertas-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:true,
+            navText: ["<span class='prev-btn fa fa-angle-left'></span>", "<span class='next-btn fa fa-angle-right'></span>"],
+            items:4,
+            slideBy:1,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{ items:1 },
+                600:{ items:2 },
+                1000:{ items:4 }
+            }
+        });
     });
-});
 </script>
-
-
-
-
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const links = document.querySelectorAll(".nav-links li a");
@@ -348,11 +412,10 @@ $(document).ready(function(){
       const linkHref = link.getAttribute("href").split('/').pop().toLowerCase();
       if (linkHref === currentPage) {
         link.classList.add("activo");
-      }
-    });
-  });
+    }
+});
+});
 </script>
-
 </body>
 </html>
 <script>
